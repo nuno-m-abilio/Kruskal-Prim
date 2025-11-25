@@ -50,7 +50,9 @@ Este trabalho avalia o desempenho dos algoritmos de Prim e Kruskal em diferentes
 ## Como Executar
 
 ```bash
-python main.py --vertices vertices.csv --arestas arestas.csv --algoritmo prim
+python main.py nodes.csv edges.csv prim
+python main.py nodes.csv edges.csv kruskal
+python main.py nodes.csv edges.csv ambos
 ```
 
 ## Estrutura do Projeto
@@ -59,5 +61,6 @@ python main.py --vertices vertices.csv --arestas arestas.csv --algoritmo prim
 ├── main.py              # Arquivo principal
 ├── prim.py              # Implementação de Prim
 ├── kruskal.py           # Implementação de Kruskal
+├── leitura_dados.py     # Leitura e processamento de CSVs
 └── README.md            # Este arquivo
 ```
