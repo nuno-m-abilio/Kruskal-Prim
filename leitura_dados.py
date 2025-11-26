@@ -1,5 +1,8 @@
 from dataclasses import dataclass
 import csv
+import os
+import psutil
+
 
 @dataclass
 class vertice:
@@ -35,8 +38,8 @@ def dict_vertices(arquivo_vertices: str) -> dict[int, vertice]:
 
 
 def lista_arestas(arquivo_arestas: str, vertices: dict[int, vertice]) -> list[aresta]:
-    '''Lê o CSV de arestas e retorna uma lista de arestas com peso calculado. Usada para o
-    algoritmo de Kruskal. Formato esperado do CSV: source,target (com cabeçalho)'''
+    '''Lê o CSV de arestas e retorna uma lista de arestas não ordenada com peso calculado. Usada
+    para o algoritmo de Kruskal. Formato esperado do CSV: source,target (com cabeçalho)'''
     arestas = []
     with open(arquivo_arestas, 'r') as f:
         reader = csv.DictReader(f)
@@ -77,3 +80,9 @@ def struct_adjacencia(arquivo_arestas: str, vertices: dict[int, vertice]) -> dic
             adjacencias[id_v2].append(aresta_v2_v1)
     
     return adjacencias
+
+def medir_uso_memoria_processo():
+    """Retorna o uso de memória (RSS) em Megabytes."""
+    processo = psutil.Process(os.getpid())
+    # memory_info().rss retorna a memória residente (bytes)
+    return processo.memory_info().rss / (1024 * 1024)

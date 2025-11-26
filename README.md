@@ -15,31 +15,30 @@ Este trabalho avalia o desempenho dos algoritmos de Prim e Kruskal em diferentes
 ## Checklist de Desenvolvimento
 
 ### 1. Leitura e Tratamento dos Dados
-- [ ] Ler arquivos CSV de vértices (coordenadas)
-- [ ] Ler arquivos CSV de arestas
-- [ ] Calcular peso de uma aresta usando distância euclidiana
-- [ ] Criar tipo de dados Vértice
-- [ ] Criar tipo de dados Aresta
-- [ ] Transformar arquivo de entrada em uma lista de adjacência para o Prim
-- [ ] Inicializar listas de vértices e de arestas em formato de conjuntos para o Kruskal
+- [x] Ler arquivos CSV de vértices (coordenadas)
+- [x] Ler arquivos CSV de arestas
+- [x] Calcular peso de uma aresta usando distância euclidiana
+- [x] Criar tipo de dados Vértice
+- [x] Criar tipo de dados Aresta
+- [x] Transformar arquivo de entrada em uma lista de adjacência para o Prim
+- [x] Inicializar listas de vértices e de arestas em formato de conjuntos para o Kruskal
 
 ### 2. Implementação do Algoritmo de Kruskal
-- [ ] Estrutura Union-Find com união por altura
-- [ ] Ordenação de arestas por peso
-- [ ] Algoritmo principal de Kruskal
+- [x] Estrutura Union-Find com união por altura
+- [x] Ordenação de arestas por peso
+- [x] Algoritmo principal de Kruskal
 
 ### 3. Implementação do Algoritmo de Prim
-- [ ] Estrutura de heap/fila de prioridade
-- [ ] Algoritmo principal de Prim
+- [x] Estrutura de heap/fila de prioridade
+- [x] Algoritmo principal de Prim
 
 ### 4. Validação e Testes
-- [ ] Verificar corretude dos algoritmos
-- [ ] Tratar grafos desconexos
-- [ ] Validar custos das MSTs
+- [x] Verificar corretude dos algoritmos
+- [x] Validar custos das MSTs
 
 ### 5. Experimentos e Medições
-- [ ] Medir tempo de execução
-- [ ] Medir uso de memória
+- [x] Medir tempo de execução
+- [x] Medir uso de memória
 - [ ] Executar em múltiplas instâncias
 
 ### 6. Análise dos Resultados
@@ -49,10 +48,24 @@ Este trabalho avalia o desempenho dos algoritmos de Prim e Kruskal em diferentes
 
 ## Como Executar
 
+### 1. Instalação de Dependências
+
+Para medir o uso de memória (funções Prim e Kruskal) é necessário instalar a biblioteca `psutil` e seu pacote de tipagem para Mypy:
+
 ```bash
-python main.py nodes.csv edges.csv prim
-python main.py nodes.csv edges.csv kruskal
-python main.py nodes.csv edges.csv ambos
+pip install psutil
+python -m pip install types-psutil
+```
+
+### 2. Execução
+
+```bash
+python main.py nodes.csv edges.csv kruskal_simples
+python main.py nodes.csv edges.csv kruskal_rank
+python main.py nodes.csv edges.csv kruskal_otimizado
+python main.py nodes.csv edges.csv prim_lista
+python main.py nodes.csv edges.csv prim_heap
+python main.py nodes.csv edges.csv todos
 ```
 
 ## Estrutura do Projeto
