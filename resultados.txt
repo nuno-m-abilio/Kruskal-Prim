@@ -1,0 +1,153 @@
+--- Grafo 1 ---
+Vértices: 8980
+Arestas: 12629
+MST encontrada com 8979 arestas
+Custo total: 3015372.43
+
+# kruskal_simples:
+Tempo de execução: 0.0785 segundos
+Uso de memória (aumento): 4.70 MB
+
+# kruskal_rank:
+Tempo de execução: 0.0711 segundos
+Uso de memória (aumento): 4.90 MB
+
+# kruskal_otimizado:
+Tempo de execução: 0.0691 segundos
+Uso de memória (aumento): 4.98 MB
+
+# prim_lista:
+Tempo de execução: 1.6773 segundos
+Uso de memória (aumento): 7.89 MB
+
+# prim_heap:
+Tempo de execução: 0.0877 segundos
+Uso de memória (aumento): 8.62 MB
+
+--- Grafo 2 ---
+Vértices: 5152
+Arestas: 7086
+MST encontrada com 5151 arestas
+Custo total: 2641212.29
+
+# kruskal_simples:
+Tempo de execução: 0.0402 segundos
+Uso de memória (aumento): 3.06 MB
+
+# kruskal_rank:
+Tempo de execução: 0.0406 segundos
+Uso de memória (aumento): 2.66 MB
+
+# kruskal_otimizado:
+Tempo de execução: 0.0410 segundos
+Uso de memória (aumento): 2.67 MB
+
+# prim_lista:
+Tempo de execução: 0.5525 segundos
+Uso de memória (aumento): 4.29 MB
+
+# prim_heap:
+Tempo de execução: 0.0491 segundos
+Uso de memória (aumento): 4.96 MB
+
+-- Grafo 3 ---
+Vértices: 37128
+Arestas: 54867
+MST encontrada com 37127 arestas
+Custo total: 3061889.58
+
+# kruskal_simples:
+Tempo de execução: 0.4494 segundos
+Uso de memória (aumento): 19.61 MB
+
+# kruskal_rank:
+Tempo de execução: 0.3192 segundos
+Uso de memória (aumento): 19.42 MB
+
+# kruskal_otimizado:
+Tempo de execução: 0.3475 segundos
+Uso de memória (aumento): 19.40 MB
+
+# prim_lista:
+Tempo de execução: 33.4218 segundos
+Uso de memória (aumento): 33.18 MB
+
+# prim_heap:
+Tempo de execução: 0.4137 segundos
+Uso de memória (aumento): 35.55 MB
+
+-- Grafo 4 ---
+Vértices: 12368
+Arestas: 16965
+MST encontrada com 12367 arestas
+Custo total: 4794641.15
+
+# kruskal_simples:
+Tempo de execução: 0.0961 segundos
+Uso de memória (aumento): 6.74 MB
+
+# kruskal_rank:
+Tempo de execução: 0.0940 segundos
+Uso de memória (aumento): 6.49 MB
+
+# kruskal_otimizado:
+Tempo de execução: 0.0974 segundos
+Uso de memória (aumento): 6.46 MB
+
+# prim_lista:
+Tempo de execução: 2.7068 segundos
+Uso de memória (aumento): 10.60 MB
+
+# prim_heap:
+Tempo de execução: 0.1234 segundos
+Uso de memória (aumento): 11.85 MB
+
+-- Grafo 5 ---
+Vértices: 212341
+Arestas: 307292
+MST encontrada com 212340 arestas
+Custo total: 16391318.64
+
+# kruskal_simples:
+Faleceu
+
+# kruskal_rank:
+Tempo de execução: 2.0787 segundos
+Uso de memória (aumento): 112.30 MB
+
+# kruskal_otimizado:
+Tempo de execução: 2.0924 segundos
+Uso de memória (aumento): 113.28 MB
+
+# prim_lista:
+Tempo de execução: 1170.3835 segundos
+Uso de memória (aumento): 184.85 MB
+
+# prim_heap:
+Tempo de execução: 2.8712 segundos
+Uso de memória (aumento): 193.33 MB
+
+-- Grafo 6 ---
+Vértices: 154938
+Arestas: 214893
+MST encontrada com 154937 arestas
+Custo total: 12342510.35
+
+# kruskal_simples:
+Faleceu
+
+# kruskal_rank:
+Tempo de execução: 1.5000 segundos
+Uso de memória (aumento): 77.29 MB
+
+# kruskal_otimizado:
+Tempo de execução: 1.4898 segundos
+Uso de memória (aumento): 77.44 MB
+
+# prim_lista:
+Tempo de execução: 616.5304 segundos
+Uso de memória (aumento): 131.34 MB
+
+# prim_heap:
+Tempo de execução: 1.9942 segundos
+Uso de memória (aumento): 135.57 MB
