@@ -39,10 +39,10 @@ Este trabalho avalia o desempenho dos algoritmos de Prim e Kruskal em diferentes
 ### 5. Experimentos e Medições
 - [x] Medir tempo de execução
 - [x] Medir uso de memória
-- [ ] Executar em múltiplas instâncias
+- [x] Executar em múltiplas instâncias
 
 ### 6. Análise dos Resultados
-- [ ] Gerar gráficos comparativos
+- [x] Gerar gráficos comparativos
 - [ ] Interpretar resultados
 - [ ] Escrever relatório final
 
