@@ -43,8 +43,8 @@ Este trabalho avalia o desempenho dos algoritmos de Prim e Kruskal em diferentes
 
 ### 6. Análise dos Resultados
 - [x] Gerar gráficos comparativos
-- [ ] Interpretar resultados
-- [ ] Escrever relatório final
+- [x] Interpretar resultados
+- [x] Escrever relatório final
 
 ## Como Executar
 
